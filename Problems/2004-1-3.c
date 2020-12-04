@@ -21,16 +21,16 @@
  * 
 */
 
-/* 如果想要拿来运行，请解除下述代码段的注释 */
+# include "stdio.h"
+# include "../Common/Lists.hpp"
+
+/* 如果想要拿来单独运行，请解除下述代码段的注释并去除include项然后自定义一个main */
 /*
 struct node_int {
     int value;
     struct node_int* next; 
 };
 */
-
-# include "stdio.h"
-# include "../Common/Lists.hpp"
 
 void findMin(node_int* head, unsigned int length) {
     node_int *min_node = head;

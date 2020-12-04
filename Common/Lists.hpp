@@ -11,11 +11,11 @@ struct node {
     value_type value;
     struct node* next; 
     node() = default;
-    node(value_type val, struct node<value_type>* nxt) : value(val), next(nxt) { }
+    node(const value_type &val, struct node<value_type>* nxt) : value(val), next(nxt) { }
 };
 
 template <class value_type>
-node<value_type>* list_get(std::initializer_list<value_type> _init_list) {
+node<value_type>* list_get(const std::initializer_list<value_type> &_init_list) {
     node<value_type> *head, *current;
     head = new node<value_type>(*_init_list.begin(), nullptr);
     current = head;
@@ -28,7 +28,7 @@ node<value_type>* list_get(std::initializer_list<value_type> _init_list) {
 }
 
 template <class value_type>
-std::pair<node<value_type>*, unsigned int> list_ring_get(std::initializer_list<value_type> _init_list) {
+std::pair<node<value_type>*, unsigned int> list_ring_get(const std::initializer_list<value_type> &_init_list) {
     node<value_type> *head, *current;
     head = new node<value_type>(*_init_list.begin(), head);
     current = head;
@@ -41,10 +41,12 @@ std::pair<node<value_type>*, unsigned int> list_ring_get(std::initializer_list<v
 }
 
 template <class list_node>
-void output_list(list_node *_node) {
+void print_list(list_node *_node) {
+    if (!_node) return;
     list_node *begin = _node;
-    for (_node; _node && _node != begin; _node++) 
-        std::cout << _node.value;
+    std::cout << begin->value;
+    for (_node = _node->next; _node && _node != begin; _node = _node->next) 
+        std::cout << ' ' << _node->value;
 }
 
 } //~list_algo

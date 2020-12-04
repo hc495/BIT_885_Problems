@@ -21,22 +21,12 @@
     };
 */
 
-# include "../Common/BinaryTree.hpp"
+# include "../Problems/2004-2-3.c"
+# include <iostream>
 
-/* 如果想要拿来单独运行，请解除下述代码段的注释并去除include项然后自定义一个main */
-/*
-struct int_tree_node {
-    value_type value;
-    int_tree_node *left;
-    int_tree_node *right;
-};
-*/
-
-int compare_trees(int_tree_node *first, int_tree_node* second) {
-    if (!(first && second)) {
-        if (first || second) return 0;
-        else return 1;
-    }
-    if (first->value != second->value) return 0;
-    return compare_trees(first->left, second->left) && compare_trees(first->right, second->right);
+int main() {
+    int_tree_node* test1 = bin_tree_algo::build_tree({1,2,3,4,5,114514,7,8});
+    int_tree_node* test2 = bin_tree_algo::build_tree({1,2,3,5,5,114514,7,8});
+    std::cout << compare_trees(test1, test2);
+    return 0;
 }

@@ -20,7 +20,6 @@
  * 且均包含在了测试文件库中。
  * 
 */
-# include "../Common/Lists.hpp"
 # include "../Problems/2004-1-3.c"
 
 int main() {
