@@ -19,6 +19,9 @@
         int_tree_node *left;
         int_tree_node *right;
     };
+ * 
+ * 扩展
+ * 只需要改动程序中的一行就可以实现“判断两个二叉树是否完全轴对称”，如何修改？
 */
 
 # include "../Common/BinaryTree.hpp"
