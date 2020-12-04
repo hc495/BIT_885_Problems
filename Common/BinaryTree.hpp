@@ -70,4 +70,4 @@ void print_tree(tree_node<value_type> *root) {
 
 }
 
-typedef bin_tree_algo::tree_node<int> int_tree_node;
+using int_tree_node = bin_tree_algo::tree_node<int>;

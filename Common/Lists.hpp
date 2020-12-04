@@ -51,4 +51,4 @@ void print_list(list_node *_node) {
 
 } //~list_algo
 
-typedef list_algo::node<int> node_int;
+using node_int = list_algo::node<int>;
