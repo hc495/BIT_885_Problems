@@ -4,6 +4,8 @@
 # include <utility>
 # include <iostream>
 
+namespace list_algo {
+
 template <class value_type>
 struct node {
     value_type value;
@@ -11,9 +13,6 @@ struct node {
     node() = default;
     node(value_type val, struct node<value_type>* nxt) : value(val), next(nxt) { }
 };
-typedef node<int> node_int;
-
-namespace list_algo {
 
 template <class value_type>
 node<value_type>* list_get(std::initializer_list<value_type> _init_list) {
@@ -49,3 +48,5 @@ void output_list(list_node *_node) {
 }
 
 } //~list_algo
+
+typedef list_algo::node<int> node_int;

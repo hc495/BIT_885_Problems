@@ -1,5 +1,5 @@
 /* 
- * Chinese Comment by UTF-8
+ * Chinese Comment by GB2312
  * 
  * 题目内容
  * 编写程序，从键盘上输入一个字符串，然后将输入的字符串按照字符的ASCII值排序，删除字符串中的空格，
@@ -21,7 +21,7 @@
  *  'a'      97 
 */
 
-# include "stdio.h"
+# include <stdio.h>
 
 int main() {
     int index[256] = { 0 };

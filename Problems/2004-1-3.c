@@ -1,5 +1,5 @@
 /* 
- * Chinese Comment by UTF-8
+ * Chinese Comment by GB2312
  * 
  * 题目内容
  * 已知有一个含有n个节点的环形链表，定义如下：
@@ -19,6 +19,14 @@
  * 为测试方便，此处链表节点结构体的名称有所改变(从node变为node_int)
  * 且均包含在了测试文件库中。
  * 
+*/
+
+/* 如果想要拿来运行，请解除下述代码段的注释 */
+/*
+struct node_int {
+    int value;
+    struct node_int* next; 
+};
 */
 
 # include "stdio.h"

@@ -1,5 +1,5 @@
 /* 
- * Chinese Comment by UTF-8
+ * Chinese Comment by GB2312
  * 
  * 题目内容
  * 使用递归方法编写函数，实现将输入的字符串反向保存 (6分)

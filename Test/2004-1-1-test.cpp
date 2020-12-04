@@ -1,5 +1,5 @@
 /* 
- * Chinese Comment by UTF-8
+ * Chinese Comment by GB2312
  * 
  * ≤‚ ‘≥Ã–Ú
  * 
