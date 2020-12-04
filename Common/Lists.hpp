@@ -32,7 +32,7 @@ std::pair<node<value_type>*, unsigned int> list_ring_get(const std::initializer_
     node<value_type> *head, *current;
     head = new node<value_type>(*_init_list.begin(), head);
     current = head;
-    for (std::initializer_list<int>::iterator i = _init_list.begin() + 1; i != _init_list.end(); ++i) {
+    for (typename std::initializer_list<value_type>::iterator i = _init_list.begin() + 1; i != _init_list.end(); ++i) {
         node<value_type> *tempPtN = new node<value_type>(*i, head);
         current->next = tempPtN;
         current = tempPtN;
