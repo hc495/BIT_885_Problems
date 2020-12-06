@@ -20,7 +20,7 @@ int main() {
     for (unsigned int i = 0; str1[i]; i++) index[str1[i]]++;
     for (unsigned int i = 0; str2[i]; i++) index[str2[i]]++;
     for (unsigned int i = 0; i < 256; i++) {
-        if (i != 32 && index[i]) putchar(i); // ¿Õ¸ñµÄASCIIÊÇ32
+        if (index[i]) putchar(i);
     }
     return 0;
 }
