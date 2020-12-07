@@ -14,7 +14,7 @@
 
 int main() {
     int index[256] = { 0 };
-    char str1[1024], str2[1024];  // 虽然这种写法很不漂亮，但考试所迫，必须如此(否则代码的篇幅会变得很长)
+    char str1[1024], str2[1024];  // 虽然这种写法很不漂亮，但考试所迫，必须如此(否则代码的篇幅会变得很长) 
     gets(str1);
     gets(str2);
     for (unsigned int i = 0; str1[i]; i++) index[str1[i]]++;
