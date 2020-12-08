@@ -20,6 +20,27 @@ struct tree_node {
         value(_va), left(le), right(ri) { }
 };
 
+template <class container, class value_type = typename container::value_type>
+tree_node<value_type>* build_tree(const container &_init_list) {
+    auto left_child = [](size_t current) {
+        return (current + 1) * 2 - 1;
+    };
+    auto right_child = [](size_t current) {
+        return (current + 1) * 2;
+    };
+    std::vector<tree_node<value_type>*> tree_heap;
+    std::for_each(_init_list.begin(), _init_list.end(), [&tree_heap](value_type _val) {
+        if (_val == null_number) tree_heap.push_back(nullptr);
+        else tree_heap.push_back(new tree_node<value_type>(_val, nullptr, nullptr));
+    });
+    for (size_t i = 0; i < tree_heap.size(); i++) {
+        if (tree_heap[i] == nullptr) continue;
+        tree_heap[i]->left = left_child(i) < tree_heap.size() ? tree_heap[left_child(i)] : nullptr;
+        tree_heap[i]->right = right_child(i) < tree_heap.size() ? tree_heap[right_child(i)] : nullptr;
+    }
+    return tree_heap.front();
+}
+
 template <class value_type>
 tree_node<value_type>* build_tree(const std::initializer_list<value_type> &_init_list) {
     auto left_child = [](size_t current) {
@@ -41,9 +62,9 @@ tree_node<value_type>* build_tree(const std::initializer_list<value_type> &_init
     return tree_heap.front();
 }
 
-template <class value_type>
-void print_tree(tree_node<value_type> *root) {
-    std::queue<tree_node<value_type>*> BFS;
+template <class node>
+void print_tree(node *root) {
+    std::queue<node*> BFS;
     BFS.push(root);
     while (1) {
         std::stringstream SS;

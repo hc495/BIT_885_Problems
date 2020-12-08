@@ -37,7 +37,33 @@ std::pair<node<value_type>*, unsigned int> list_ring_get(const std::initializer_
         current->next = tempPtN;
         current = tempPtN;
     }
-    return {head, _init_list.size()};
+    return { head, _init_list.size() };
+}
+
+template <class container, class value_type = typename container::value_type>
+node<value_type>* list_get(const container &_init_list) {
+    node<value_type> *head, *current;
+    head = new node<value_type>(*_init_list.begin(), nullptr);
+    current = head;
+    for (typename container::iterator i = _init_list.begin() + 1; i != _init_list.end(); ++i) {
+        node<value_type> *tempPtN = new node<value_type>(*i, nullptr);
+        current->next = tempPtN;
+        current = tempPtN;
+    }
+    return head;
+}
+
+template <class container, class value_type = typename container::value_type>
+std::pair<node<value_type>*, unsigned int> list_ring_get(const container &_init_list) {
+    node<value_type> *head, *current;
+    head = new node<value_type>(*_init_list.begin(), head);
+    current = head;
+    for (typename container::iterator i = _init_list.begin() + 1; i != _init_list.end(); ++i) {
+        node<value_type> *tempPtN = new node<value_type>(*i, head);
+        current->next = tempPtN;
+        current = tempPtN;
+    }
+    return { head, _init_list.size() };
 }
 
 template <class list_node>
