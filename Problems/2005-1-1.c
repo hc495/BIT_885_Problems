@@ -17,6 +17,6 @@ int main() {
                 for (unsigned int l = 2; i * j * k * l <= 135; l++) 
                     for (unsigned int m = 2; i * j * k * l * m <= 135; m++)
                         if (i + i * j + i * j * k + i * j * k * l + i * j * k * l * m == 135)
-                            printf("%d, %d, %d, %d, %d\n", i, i * j, i * j * k, i * j * k * l, i * j * k * l * m);
+                            printf("%ud, %ud, %ud, %ud, %ud\n", i, i * j, i * j * k, i * j * k * l, i * j * k * l * m);
     return 0;
 }
