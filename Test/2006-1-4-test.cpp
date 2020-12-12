@@ -2,19 +2,17 @@
  * Chinese Comment by GB2312
  * 
  * 题目内容
- * 有一个保存学生课程成绩的结构数组，保存学生的考号和课程成绩。
- * 请编写一个函数，将保存在结构数组中的数据按照课程成绩从高到低的顺序存放在一个单向链表中。
+ * 有一个保存学生课程成绩的结构数组，保存学生的学号、课程编号和课程成绩。
+ * 请编写一个函数，将保存在结构数组中的数据先按照课程编号从小到大，再按照课程成绩从高到低的顺序存放在一个单向链表中。
  * 结构体定义如下 
  *  struct student {
- *      int no;
+ *      int sno; // 学生编号
+ *      int cno; // 课程编号
  *      float score;
- * };
+ *  };
  * 
  * 分析
- * 是要求较高的一道题。
- * 朴素地想，可以使用链表的插入排序来解决这一问题。但必须想到插入排序的效率偏低，而链表不支持快速排序等折半排序法。
- * 故考虑先对数组进行从小到大的排序，再对链表执行头插法构建得到从大到小的链表。
- * 本实现要求较高，如无能力则可以使用链表插入排序。
+ * 与2005-1-4大致相似，只是需要重新编写一下
  * 
  * 要点
  * - 链表的头插法构建
@@ -29,16 +27,17 @@
  *  若返回值为正整数，则a会被排在b之后
  *  若返回值是0，则a和b不区分前后
 */
-# include "../Problems/2005-1-4.c"
+
+# include "../Problems/2006-1-4.c"
 # include <vector>
 # include "../Common/Lists.hpp"
 
 std::ostream& operator<<(std::ostream& OS, student stu) {
-    return OS << stu.no << ',' << stu.score << '\n';
+    return OS << stu.sno << ',' << stu.cno << ',' << stu.score << '\n';
 }
 
 int main() {
-    std::vector<student> test = {{1, 3}, {2, 25}, {3, 18}, {4, 48}};
+    std::vector<student> test = {{1, 3, 15}, {2, 3, 25}, {3, 3, 18}, {4, 1, 48}};
     node_stu* res = sort_student(&*test.begin(), test.size());
     list_algo::print_list(res);
     return 0;
