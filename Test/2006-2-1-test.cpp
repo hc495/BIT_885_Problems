@@ -1,11 +1,11 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ÌâÄ¿ÄÚÈÝ
- * Çë¸ø³ö²ãÐò±éÀú¶þ²æÊ÷µÄËã·¨
+ * é¢˜ç›®å†…å®¹
+ * è¯·ç»™å‡ºå±‚åºéåŽ†äºŒå‰æ ‘çš„ç®—æ³•
  * 
- * ·ÖÎö
- * »ù±¾BFS£¬¼òµ¥µÃºÜ¡£
+ * åˆ†æž
+ * åŸºæœ¬BFSï¼Œç®€å•å¾—å¾ˆã€‚
 */
 
 # include "../Problems/2006-2-1.c"

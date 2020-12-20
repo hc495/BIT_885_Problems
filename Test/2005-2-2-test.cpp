@@ -1,14 +1,14 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ÌâÄ¿ÄÚÈÝ
- * Çë¸ø³Ô½¨Á¢¶þ²æÅÅÐòÊ÷µÄËã·¨
+ * é¢˜ç›®å†…å®¹
+ * è¯·ç»™åƒå»ºç«‹äºŒå‰æŽ’åºæ ‘çš„ç®—æ³•
  * 
- * ·ÖÎö
- * ¶þ²æ²éÕÒÊ÷»ù±¾Ëã·¨¡£
+ * åˆ†æž
+ * äºŒå‰æŸ¥æ‰¾æ ‘åŸºæœ¬ç®—æ³•ã€‚
  * 
- * Òªµã
- * - ½¨Á¢¶þ²æ²éÕÒÊ÷
+ * è¦ç‚¹
+ * - å»ºç«‹äºŒå‰æŸ¥æ‰¾æ ‘
 */
 # include "../Problems/2005-2-2.c"
 # include <vector>

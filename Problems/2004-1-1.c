@@ -1,17 +1,17 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ÌâÄ¿ÄÚÈİ
- * Ê¹ÓÃµİ¹é·½·¨±àĞ´º¯Êı£¬ÊµÏÖ½«ÊäÈëµÄ×Ö·û´®·´Ïò±£´æ (6·Ö)
+ * é¢˜ç›®å†…å®¹
+ * ä½¿ç”¨é€’å½’æ–¹æ³•ç¼–å†™å‡½æ•°ï¼Œå®ç°å°†è¾“å…¥çš„å­—ç¬¦ä¸²åå‘ä¿å­˜ (6åˆ†)
  * 
- * ·ÖÎö
- * ±¾ÌâÈç¹ûĞ´Ò»°ãÑ­»·µÄ»°·Ç³£ÈİÒ×¡£
- * Ö÷Òª¿¼²ìÍ¨¹ıCµÄ»ù´¡²Ù×÷ÒÔ¼°Î²µİ¹éºÍÑ­»·µÄ×ª»¯¡£
+ * åˆ†æ
+ * æœ¬é¢˜å¦‚æœå†™ä¸€èˆ¬å¾ªç¯çš„è¯éå¸¸å®¹æ˜“ã€‚
+ * ä¸»è¦è€ƒå¯Ÿé€šè¿‡Cçš„åŸºç¡€æ“ä½œä»¥åŠå°¾é€’å½’å’Œå¾ªç¯çš„è½¬åŒ–ã€‚
  * 
- * Òªµã
- * - CÀàĞÍ×Ö·û´®µÄ³¤¶ÈÈçºÎ»ñÈ¡£¿
- * - Ñ­»·×ªÎ²µİ¹é
- * - ÊäÈëÊä³ö×Ö·û´®(gets puts) (ÔÚ´úÂëÖĞÎ´ÌåÏÖ)
+ * è¦ç‚¹
+ * - Cç±»å‹å­—ç¬¦ä¸²çš„é•¿åº¦å¦‚ä½•è·å–ï¼Ÿ
+ * - å¾ªç¯è½¬å°¾é€’å½’
+ * - è¾“å…¥è¾“å‡ºå­—ç¬¦ä¸²(gets puts) (åœ¨ä»£ç ä¸­æœªä½“ç°)
 */
 
 # include <stdio.h>
@@ -19,14 +19,14 @@
 void __reverse(char* str, unsigned int left, unsigned int right) {
     if (left >= right) return;
     char temp_char;
-    temp_char = str[left]; // ½»»»×Ö·û
+    temp_char = str[left]; // äº¤æ¢å­—ç¬¦
     str[left++] = str[right];
     str[right--] = temp_char;
-    __reverse(str, left, right); // µİ¹é´«µİµ÷ÓÃ
+    __reverse(str, left, right); // é€’å½’ä¼ é€’è°ƒç”¨
 }
 
-void reverse(char* str) { // Çı¶¯º¯Êı
+void reverse(char* str) { // é©±åŠ¨å‡½æ•°
     unsigned int length = 0; 
-    for (length = 0; str[length]; length++); // »ñÈ¡×Ö·û´®³¤¶È
+    for (length = 0; str[length]; length++); // è·å–å­—ç¬¦ä¸²é•¿åº¦
     __reverse(str, 0, length - 1);
 }

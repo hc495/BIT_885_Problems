@@ -1,20 +1,20 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ÌâÄ¿ÄÚÈÝ
- * ±àÐ´³ÌÐò£¬ÊµÏÖ´Ó¼üÅÌÉÏÊäÈëÁ½¸ö×Ö·û´®£¬½«ËüÃÇºÏ²¢Ö®ºó°´ASCIIÂëÖµ´Ó´óµ½Ð¡ÅÅÐòÔÚÆÁÄ»Êä³ö£¬ÏàÍ¬µÄ×Ö·û½öÊä³öÒ»´Î¡£
+ * é¢˜ç›®å†…å®¹
+ * ç¼–å†™ç¨‹åºï¼Œå®žçŽ°ä»Žé”®ç›˜ä¸Šè¾“å…¥ä¸¤ä¸ªå­—ç¬¦ä¸²ï¼Œå°†å®ƒä»¬åˆå¹¶ä¹‹åŽæŒ‰ASCIIç å€¼ä»Žå¤§åˆ°å°æŽ’åºåœ¨å±å¹•è¾“å‡ºï¼Œç›¸åŒçš„å­—ç¬¦ä»…è¾“å‡ºä¸€æ¬¡ã€‚
  * 
- * ·ÖÎö
- * Ëã·¨Óë2004-1-2ÍêÈ«Ò»ÖÂ£¬Ê¹ÓÃ¼ÆÊýÅÅÐòµÄÍË»¯Çé¿ö¡£
+ * åˆ†æž
+ * ç®—æ³•ä¸Ž2004-1-2å®Œå…¨ä¸€è‡´ï¼Œä½¿ç”¨è®¡æ•°æŽ’åºçš„é€€åŒ–æƒ…å†µã€‚
  * 
- * Òªµã
- * - ¼ÆÊýÅÅÐòµÄÍË»¯Çé¿ö
+ * è¦ç‚¹
+ * - è®¡æ•°æŽ’åºçš„é€€åŒ–æƒ…å†µ
 */
 # include <stdio.h>
 
 int main() {
     int index[256] = { 0 };
-    char str1[1024], str2[1024];  // ËäÈ»ÕâÖÖÐ´·¨ºÜ²»Æ¯ÁÁ£¬µ«¿¼ÊÔËùÆÈ£¬±ØÐëÈç´Ë(·ñÔò´úÂëµÄÆª·ù»á±äµÃºÜ³¤) 
+    char str1[1024], str2[1024];  // è™½ç„¶è¿™ç§å†™æ³•å¾ˆä¸æ¼‚äº®ï¼Œä½†è€ƒè¯•æ‰€è¿«ï¼Œå¿…é¡»å¦‚æ­¤(å¦åˆ™ä»£ç çš„ç¯‡å¹…ä¼šå˜å¾—å¾ˆé•¿) 
     gets(str1);
     gets(str2);
     for (unsigned int i = 0; str1[i]; i++) index[str1[i]]++;

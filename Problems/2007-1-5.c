@@ -1,5 +1,5 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
  * 题目内容
  * 输入一个长度不超过100的字符串，删除串中的重复字符。如
@@ -12,7 +12,7 @@
  */
 # include <string.h>
 # include <stdlib.h>
- 
+
 void unique(char* string) {
     unsigned int length = strlen(string);
     char result[length] = { '\0' };

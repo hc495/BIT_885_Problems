@@ -1,11 +1,11 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ÌâÄ¿ÄÚÈİ
- * Çë¸ø³ö¿ìËÙÅÅĞòµÄËã·¨
+ * é¢˜ç›®å†…å®¹
+ * è¯·ç»™å‡ºå¿«é€Ÿæ’åºçš„ç®—æ³•
  * 
- * ·ÖÎö
- * »ù±¾Ëã·¨¹¦µ×¡£Ğ´ÑÏ°æÒÔµÚÒ»¸öÎªpivotµÄ¾ÍĞĞÁË¡£
+ * åˆ†æ
+ * åŸºæœ¬ç®—æ³•åŠŸåº•ã€‚å†™ä¸¥ç‰ˆä»¥ç¬¬ä¸€ä¸ªä¸ºpivotçš„å°±è¡Œäº†ã€‚
 */
 
 void swap(int* a, int* b) {
@@ -18,7 +18,7 @@ void quick_sort(int* array, unsigned int length) {
     __quick_sort(array, 0, length);
 }
 
-void __quick_sort(int* array, unsigned int begin, unsigned int end) { //×ó¿ªÓÒ±Õ
+void __quick_sort(int* array, unsigned int begin, unsigned int end) { //å·¦å¼€å³é—­
     if (begin + 1 >= end) return;
     unsigned int left = begin + 1, right = end - 1;
     while (1) {

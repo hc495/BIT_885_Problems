@@ -1,20 +1,20 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ÌâÄ¿ÄÚÈÝ
- * ±àÐ´³ÌÐò£¬´Ó¼üÅÌÉÏÊäÈëÒ»¸ö×Ö·û´®£¬È»ºó½«ÊäÈëµÄ×Ö·û´®°´ÕÕ×Ö·ûµÄASCIIÖµÅÅÐò£¬É¾³ý×Ö·û´®ÖÐµÄ¿Õ¸ñ£¬
- * ÇÒÏàÍ¬µÄ×Ö·ûÔÚ´®ÖÐ½ö³öÏÖÒ»´Î£¬½«ÅÅÐòºóµÄ×Ö·û´®ÔÚÆÁÄ»ÉÏÏÔÊ¾
+ * é¢˜ç›®å†…å®¹
+ * ç¼–å†™ç¨‹åºï¼Œä»Žé”®ç›˜ä¸Šè¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œç„¶åŽå°†è¾“å…¥çš„å­—ç¬¦ä¸²æŒ‰ç…§å­—ç¬¦çš„ASCIIå€¼æŽ’åºï¼Œåˆ é™¤å­—ç¬¦ä¸²ä¸­çš„ç©ºæ ¼ï¼Œ
+ * ä¸”ç›¸åŒçš„å­—ç¬¦åœ¨ä¸²ä¸­ä»…å‡ºçŽ°ä¸€æ¬¡ï¼Œå°†æŽ’åºåŽçš„å­—ç¬¦ä¸²åœ¨å±å¹•ä¸Šæ˜¾ç¤º
  * 
- * ·ÖÎö
- * Ö÷Òª¿¼²ì¼ÆÊýÅÅÐòµÄÍË»¯Çé¿öºÍASCIIÂë
+ * åˆ†æž
+ * ä¸»è¦è€ƒå¯Ÿè®¡æ•°æŽ’åºçš„é€€åŒ–æƒ…å†µå’ŒASCIIç 
  * 
- * Òªµã
- * - ¼ÆÊýÅÅÐòµÄÍË»¯Çé¿ö
- * - ×Ö·û´®ÊäÈëºÍÊä³ö
- * - Êý×é¡¢Êý×éµÄ³õÊ¼»¯
- * - »ù´¡ASCIIÂëÓÐ128¸ö£¬À©Õ¹´òÓ¡×Ö·û¼¯ÓÐ256¸ö
+ * è¦ç‚¹
+ * - è®¡æ•°æŽ’åºçš„é€€åŒ–æƒ…å†µ
+ * - å­—ç¬¦ä¸²è¾“å…¥å’Œè¾“å‡º
+ * - æ•°ç»„ã€æ•°ç»„çš„åˆå§‹åŒ–
+ * - åŸºç¡€ASCIIç æœ‰128ä¸ªï¼Œæ‰©å±•æ‰“å°å­—ç¬¦é›†æœ‰256ä¸ª
  * 
- * ¸½¼ÓÖªÊ¶£º¼¸¸öÖØÒªµÄASCII
+ * é™„åŠ çŸ¥è¯†ï¼šå‡ ä¸ªé‡è¦çš„ASCII
  *  ' '      32
  *  '0'      48
  *  'A'      65
@@ -25,11 +25,11 @@
 
 int main() {
     int index[256] = { 0 };
-    char str[1024];  // ËäÈ»ÕâÖÖÐ´·¨ºÜ²»Æ¯ÁÁ£¬µ«¿¼ÊÔËùÆÈ£¬±ØÐëÈç´Ë(·ñÔò´úÂëµÄÆª·ù»á±äµÃºÜ³¤)
+    char str[1024];  // è™½ç„¶è¿™ç§å†™æ³•å¾ˆä¸æ¼‚äº®ï¼Œä½†è€ƒè¯•æ‰€è¿«ï¼Œå¿…é¡»å¦‚æ­¤(å¦åˆ™ä»£ç çš„ç¯‡å¹…ä¼šå˜å¾—å¾ˆé•¿)
     gets(str);
     for (unsigned int i = 0; str[i]; i++) index[str[i]]++;
     for (unsigned int i = 0; i < 256; i++) {
-        if (i != 32 && index[i]) putchar(i); // ¿Õ¸ñµÄASCIIÊÇ32
+        if (i != 32 && index[i]) putchar(i); // ç©ºæ ¼çš„ASCIIæ˜¯32
     }
     return 0;
 }

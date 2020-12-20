@@ -1,5 +1,5 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
  * 题目内容
  * 按以下规则生成数列：
@@ -11,7 +11,7 @@
  * 分析
  * 翻译题。模拟算法即可
  */
- 
+
 int get_in_list(unsigned int loca) {
     int list[loca + 1]; // 多开一个是为了防止最后一次计算大于10
     list[0] = 2, list[1] = 3;

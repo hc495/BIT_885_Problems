@@ -1,38 +1,38 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ��Ŀ����
- * ��һ������ѧ���γ̳ɼ��Ľṹ���飬����ѧ����ѧ�š��γ̱�źͿγ̳ɼ���
- * ���дһ���������������ڽṹ�����е������Ȱ��տγ̱�Ŵ�С�����ٰ��տγ̳ɼ��Ӹߵ��͵�˳������һ�����������С�
- * �ṹ�嶨������ 
+ * 题目内容
+ * 有一个保存学生课程成绩的结构数组，保存学生的学号、课程编号和课程成绩。
+ * 请编写一个函数，将保存在结构数组中的数据先按照课程编号从小到大，再按照课程成绩从高到低的顺序存放在一个单向链表中。
+ * 结构体定义如下 
  *  struct student {
- *      int sno; // ѧ�����
- *      int cno; // �γ̱��
+ *      int sno; // 学生编号
+ *      int cno; // 课程编号
  *      float score;
  *  };
  * 
- * ����
- * ��2005-1-4�������ƣ�ֻ����Ҫ���±�дһ��
+ * 分析
+ * 与2005-1-4大致相似，只是需要重新编写一下
  * 
- * Ҫ��
- * - ������ͷ�巨����
- * - malloc����
- * - ��������qsort�Ŀ����������
- * - ����ָ�롢voidָ�뼰ָ������ת��
+ * 要点
+ * - 链表的头插法构建
+ * - malloc函数
+ * - 快速排序qsort的库包含及调用
+ * - 函数指针、void指针及指针类型转换
  * 
- * ����֪ʶ
- * qsort�����бȽϺ����ķ���ֵ
- *  int compare(const void* a, const void* b)�У�
- *  ������ֵΪ����������a�ᱻ����b֮ǰ
- *  ������ֵΪ����������a�ᱻ����b֮��
- *  ������ֵ��0����a��b������ǰ��
+ * 背景知识
+ * qsort方法中比较函数的返回值
+ *  int compare(const void* a, const void* b)中：
+ *  若返回值为负整数，则a会被排在b之前
+ *  若返回值为正整数，则a会被排在b之后
+ *  若返回值是0，则a和b不区分前后
 */
 
-# include <stdlib.h> // Ϊ��ʹ��qsort��malloc
+# include <stdlib.h> // 为了使用qsort和malloc
 
 struct student {
-    int sno; // ѧ�����
-    int cno; // �γ̱��
+    int sno; // 学生编号
+    int cno; // 课程编号
     float score;
 };
 
@@ -41,8 +41,8 @@ struct node_stu {
     node_stu* next;
 };
 
-int compare_stu(const void* a, const void* b) { // ���ǵ�����Ŀscore��float���ʲ������׷��ز�ֵ�� // ��������
-    if (((student*)a)->cno == ((student*)b)->cno) // ע��۲�����
+int compare_stu(const void* a, const void* b) { // 考虑到本题目score是float，故不可轻易返回差值。 // 反向排序
+    if (((student*)a)->cno == ((student*)b)->cno) // 注意观察括号
         return ((student*)a)->score > ((student*)b)->score ? 1 : -1;
     else return -((student*)a)->cno + ((student*)b)->cno;
 }

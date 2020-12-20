@@ -1,30 +1,30 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ÌâÄ¿ÄÚÈÝ
- * ÒÑÖªÓÐÒ»¸öº¬ÓÐn¸ö½ÚµãµÄ»·ÐÎÁ´±í£¬¶¨ÒåÈçÏÂ£º
+ * é¢˜ç›®å†…å®¹
+ * å·²çŸ¥æœ‰ä¸€ä¸ªå«æœ‰nä¸ªèŠ‚ç‚¹çš„çŽ¯å½¢é“¾è¡¨ï¼Œå®šä¹‰å¦‚ä¸‹ï¼š
     struct node {
         int value;
         struct node* next; 
     };
- * ±àÐ´º¯Êý£¬²éÕÒÁ´±íÖÐµÄvalue³ÉÔ±ÊýÖµ×îÐ¡½Úµã£¬²¢Êä³öÆävalueÖµ
+ * ç¼–å†™å‡½æ•°ï¼ŒæŸ¥æ‰¾é“¾è¡¨ä¸­çš„valueæˆå‘˜æ•°å€¼æœ€å°èŠ‚ç‚¹ï¼Œå¹¶è¾“å‡ºå…¶valueå€¼
  * 
- * ·ÖÎö
- * ÇëÎñ±Ø×¢Òâ±¾ÌâÄ¿µÄÁ´±íÊÇ»·ÐÎ±í£¬¹Ê²»¿ÉÒÔÓÃÖ¸ÕëÓòÎªnullÀ´×÷Îª±éÀúµÄ½ØÖ¹Ìõ¼þ
+ * åˆ†æž
+ * è¯·åŠ¡å¿…æ³¨æ„æœ¬é¢˜ç›®çš„é“¾è¡¨æ˜¯çŽ¯å½¢è¡¨ï¼Œæ•…ä¸å¯ä»¥ç”¨æŒ‡é’ˆåŸŸä¸ºnullæ¥ä½œä¸ºéåŽ†çš„æˆªæ­¢æ¡ä»¶
  * 
- * Òªµã
- * - »·ÐÎÁ´±í±éÀú
- * - ½ØÖ¹Ìõ¼þÎñ±ØÈÏÕæ¿¼ÂÇ
+ * è¦ç‚¹
+ * - çŽ¯å½¢é“¾è¡¨éåŽ†
+ * - æˆªæ­¢æ¡ä»¶åŠ¡å¿…è®¤çœŸè€ƒè™‘
  * 
- * Îª²âÊÔ·½±ã£¬´Ë´¦Á´±í½Úµã½á¹¹ÌåµÄÃû³ÆÓÐËù¸Ä±ä(´Ónode±äÎªnode_int)
- * ÇÒ¾ù°üº¬ÔÚÁË²âÊÔÎÄ¼þ¿âÖÐ¡£
+ * ä¸ºæµ‹è¯•æ–¹ä¾¿ï¼Œæ­¤å¤„é“¾è¡¨èŠ‚ç‚¹ç»“æž„ä½“çš„åç§°æœ‰æ‰€æ”¹å˜(ä»Žnodeå˜ä¸ºnode_int)
+ * ä¸”å‡åŒ…å«åœ¨äº†æµ‹è¯•æ–‡ä»¶åº“ä¸­ã€‚
  * 
 */
 
 # include "stdio.h"
 # include "../Common/Lists.hpp"
 
-/* Èç¹ûÏëÒªÄÃÀ´µ¥¶ÀÔËÐÐ£¬Çë½â³ýÏÂÊö´úÂë¶ÎµÄ×¢ÊÍ²¢È¥³ýincludeÏîÈ»ºó×Ô¶¨ÒåÒ»¸ömain */
+/* å¦‚æžœæƒ³è¦æ‹¿æ¥å•ç‹¬è¿è¡Œï¼Œè¯·è§£é™¤ä¸‹è¿°ä»£ç æ®µçš„æ³¨é‡Šå¹¶åŽ»é™¤includeé¡¹ç„¶åŽè‡ªå®šä¹‰ä¸€ä¸ªmain */
 /*
 struct node_int {
     int value;

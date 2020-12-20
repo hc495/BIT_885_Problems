@@ -1,19 +1,19 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ÌâÄ¿ÄÚÈÝ
- * Çë¸ø³Ô½¨Á¢¶þ²æÅÅÐòÊ÷µÄËã·¨
+ * é¢˜ç›®å†…å®¹
+ * è¯·ç»™åƒå»ºç«‹äºŒå‰æŽ’åºæ ‘çš„ç®—æ³•
  * 
- * ·ÖÎö
- * ¶þ²æ²éÕÒÊ÷»ù±¾Ëã·¨¡£
- * ³ÌÐò½Ï³¤£¬ÐèÒªÇåÎúµÄÂß¼­¡£½¨Òé´ò²Ý¸å¡£
+ * åˆ†æž
+ * äºŒå‰æŸ¥æ‰¾æ ‘åŸºæœ¬ç®—æ³•ã€‚
+ * ç¨‹åºè¾ƒé•¿ï¼Œéœ€è¦æ¸…æ™°çš„é€»è¾‘ã€‚å»ºè®®æ‰“è‰ç¨¿ã€‚
  * 
- * Òªµã
- * - ½¨Á¢¶þ²æ²éÕÒÊ÷
+ * è¦ç‚¹
+ * - å»ºç«‹äºŒå‰æŸ¥æ‰¾æ ‘
 */
 # include "../Common/BinaryTree.hpp"
 
-/* Èç¹ûÏëÒªÄÃÀ´µ¥¶ÀÔËÐÐ£¬Çë½â³ýÏÂÊö´úÂë¶ÎµÄ×¢ÊÍ²¢È¥³ýÉÏ±ßµÄincludeÏîÈ»ºó×Ô¶¨ÒåÒ»¸ömain */
+/* å¦‚æžœæƒ³è¦æ‹¿æ¥å•ç‹¬è¿è¡Œï¼Œè¯·è§£é™¤ä¸‹è¿°ä»£ç æ®µçš„æ³¨é‡Šå¹¶åŽ»é™¤ä¸Šè¾¹çš„includeé¡¹ç„¶åŽè‡ªå®šä¹‰ä¸€ä¸ªmain */
 /*
 struct int_tree_node {
     value_type value;

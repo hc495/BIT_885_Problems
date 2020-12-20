@@ -1,5 +1,5 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
  * 题目内容
  * 请编写一个求字符串长度的递归函数，函数原型为：int strlong(char *string)

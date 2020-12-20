@@ -1,14 +1,14 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ��Ŀ����
- * �����ͳ�ƶ�����Ҷ�ڵ�����ĵݹ��㷨
+ * 题目内容
+ * 请给出统计二叉树叶节点个数的递归算法
  * 
- * ����
- * ��2��򵥣��׸�DFS�ݹ��⡣���ж϶�������ͬ���㷨����һ�¡�
+ * 分析
+ * 比2题简单，白给DFS递归题。与判断二叉树相同的算法基本一致。
  * 
- * Ҫ��
- * - Ҷ�ӽڵ�
+ * 要点
+ * - 叶子节点
 */
 # include "../Problems/2005-2-3.c"
 # include <vector>

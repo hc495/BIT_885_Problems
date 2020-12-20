@@ -1,5 +1,5 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
  * 题目内容
  * 一个自然数的七进制表示是一个三位数，而这个自然数的九进制表示也是一个三位数，

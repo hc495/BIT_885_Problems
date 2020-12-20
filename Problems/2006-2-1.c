@@ -1,18 +1,18 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ÌâÄ¿ÄÚÈÝ
- * Çë¸ø³ö²ãÐò±éÀú¶þ²æÊ÷µÄËã·¨
+ * é¢˜ç›®å†…å®¹
+ * è¯·ç»™å‡ºå±‚åºéåŽ†äºŒå‰æ ‘çš„ç®—æ³•
  * 
- * ·ÖÎö
- * »ù±¾BFS£¬¼òµ¥µÃºÜ¡£
- * Õâ¶¼²»»áÄã¿¼¸ö´¸×Ó¼ÆËã»ú¡£
+ * åˆ†æž
+ * åŸºæœ¬BFSï¼Œç®€å•å¾—å¾ˆã€‚
+ * è¿™éƒ½ä¸ä¼šä½ è€ƒä¸ªé”¤å­è®¡ç®—æœºã€‚
 */
 
 # include "../Common/BinaryTree.hpp"
 # include "../Common/CQueue.hpp"
 
-/* Èç¹ûÏëÒªÄÃÀ´µ¥¶ÀÔËÐÐ£¬Çë½â³ýÏÂÊö´úÂë¶ÎµÄ×¢ÊÍ²¢È¥³ýincludeÏîÈ»ºó×Ô¶¨ÒåÒ»¸ömain */
+/* å¦‚æžœæƒ³è¦æ‹¿æ¥å•ç‹¬è¿è¡Œï¼Œè¯·è§£é™¤ä¸‹è¿°ä»£ç æ®µçš„æ³¨é‡Šå¹¶åŽ»é™¤includeé¡¹ç„¶åŽè‡ªå®šä¹‰ä¸€ä¸ªmain */
 /*
 struct int_tree_node {
     value_type value;

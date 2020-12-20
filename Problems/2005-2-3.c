@@ -1,19 +1,19 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ��Ŀ����
- * �����ͳ�ƶ�����Ҷ�ڵ�����ĵݹ��㷨
+ * 题目内容
+ * 请给出统计二叉树叶节点个数的递归算法
  * 
- * ����
- * ��2��򵥣��׸�DFS�ݹ��⡣���ж϶�������ͬ���㷨����һ�¡�
+ * 分析
+ * 比2题简单，白给DFS递归题。与判断二叉树相同的算法基本一致。
  * 
- * Ҫ��
- * - Ҷ�ӽڵ�
+ * 要点
+ * - 叶子节点
 */
 
 # include "../Common/BinaryTree.hpp"
 
-/* �����Ҫ�����������У�������������ε�ע�Ͳ�ȥ��include��Ȼ���Զ���һ��main */
+/* 如果想要拿来单独运行，请解除下述代码段的注释并去除include项然后自定义一个main */
 /*
 struct int_tree_node {
     value_type value;

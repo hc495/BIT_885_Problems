@@ -1,5 +1,5 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
  * 题目内容
  * 从键盘上输入整数n，将n分解为若干质数之积，并输出之。

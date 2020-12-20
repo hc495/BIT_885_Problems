@@ -1,15 +1,15 @@
 /* 
- * Chinese Comment by GB2312
+ * Chinese Comment by UTF-8
  * 
- * ��Ŀ����
- * ��֪һ���޷�������n��дһ�㷨������ת��Ϊ8��������Ҫ������ջ��ʵ�֡�
+ * 题目内容
+ * 已知一个无符号整数n，写一算法，将其转化为8进制数。要求用链栈来实现。
  * 
- * ����
- * ûɶ��˼���⣬Ϊ����ջ����ջ��
- * ���п��Խ���ջ����ADT���ã��������ֽ���и�ԣ������򵥵�ʵ��һ�¡�
+ * 分析
+ * 没啥意思的题，为了用栈而用栈。
+ * 考研可以将链栈当作ADT来用，但是如果纸面有富裕，建议简单地实现一下。
  * 
- * Ҫ��
- * - ��ջADT
+ * 要点
+ * - 链栈ADT
 */
 
 # include "../Common/Lists.hpp"
@@ -44,7 +44,7 @@ int pop(stack sta) {
     return res;
 }
 
-// �������ݿ���ʱ����Ҫ����Բ�д
+// 以上内容考试时如无要求可以不写
 
 void trans(int n) {
     stack numStack = initstack();
