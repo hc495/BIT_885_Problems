@@ -16,7 +16,7 @@ value_type queue_pop(std::queue<value_type> &queue) {
 }
 
 template <class value_type>
-void queue_push(std::queue<value_type> &queue, value_type value) {
+void queue_push(std::queue<value_type> &queue, const value_type &value) {
     queue.push(value);
 }
 
