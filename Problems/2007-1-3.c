@@ -7,7 +7,7 @@
  * 分析
  * 传统艺能：循环转尾递归
  */
- 
+
 int strlong(char* string) {
     if (string[0] == '\0') return 0;
     else return strlong(string + 1) + 1;

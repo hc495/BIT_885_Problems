@@ -8,7 +8,7 @@
  * 分析
  * 基本进制转换题。然后还有传统艺能"反着写"，基本白送。
  */
- 
+
 int find_number() {
     for (int i = 7 * 7 * 7; i < 7 * 7 * 7 * 7; i++) {
         int temp_num = i;
@@ -24,7 +24,7 @@ int find_number() {
             num_in_9 += temp_num % 9;
             temp_num /= 9;
         }
-        int revesed_num_9 = 0;
+        int reversed_num_9 = 0;
         while (num_in_9) {
             reversed_num_9 *= 10;
             reversed_num_9 += num_in_9 & 10;
